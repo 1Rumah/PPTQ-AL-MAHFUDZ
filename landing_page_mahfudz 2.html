@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPTQ Al Mahfudz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #2d6a4f;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+        }
+        .menu-button {
+            position: absolute;
+            right: 20px;
+            top: 15px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        nav {
+            display: none;
+            background-color: #1b4332;
+            color: white;
+            padding: 10px;
+            position: absolute;
+            right: 20px;
+            top: 55px;
+            z-index: 1;
+        }
+        nav a {
+            display: block;
+            color: white;
+            padding: 8px 0;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #40916c;
+        }
+        section {
+            padding: 20px;
+        }
+        .submenu {
+            padding-left: 15px;
+            font-size: 0.95em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>PPTQ Al Mahfudz</h1>
+    <div class="menu-button" onclick="toggleMenu()">⋮</div>
+    <nav id="dropdownMenu">
+        <a href="#">Tentang Kami</a>
+        <div class="submenu">
+            <a href="#">Profil Pimpinan</a>
+            <a href="#">Program Ma'had</a>
+            <a href="#">Podcast & Santri Affiliate</a>
+        </div>
+        <a href="#">Kegiatan & Fasilitas</a>
+        <div class="submenu">
+            <a href="#">Kegiatan Santri</a>
+            <a href="#">Bertani & Bisnis</a>
+            <a href="#">Kunjungan Edukasi</a>
+        </div>
+        <a href="#">Pendaftaran</a>
+        <div class="submenu">
+            <a href="#">Formulir Pendaftaran</a>
+            <a href="#">Beasiswa Full</a>
+        </div>
+        <a href="#">Kontak</a>
+    </nav>
+</header>
+
+<section>
+    <h2>Selamat Datang di PPTQ Al Mahfudz</h2>
+    <p>Pondok Pesantren Tahfidzul Qur’an dan Agropreneur Al Mahfudz membuka pendaftaran santri baru tahun ajaran 2024–2025 (Putra). Dengan pembimbing: H. Fathurrahman Mahfudz, BIRK, MM.</p>
+
+    <h3>Program Unggulan</h3>
+    <ul>
+        <li>Tahfidz Al-Qur’an & Bahasa Arab</li>
+        <li>Belajar bertani dan bisnis digital (online & offline)</li>
+        <li>Podcast Komunikasi Bisnis Santri</li>
+        <li>Ekskursi edukatif: perpustakaan, museum, wisata alam</li>
+    </ul>
+
+    <h3>Beasiswa Full</h3>
+    <p>Tersedia beasiswa penuh untuk jenjang SD, SMP, hingga SMA. Termasuk fasilitas lengkap: asrama, makan, olahraga, belajar teknologi dan pertanian.</p>
+</section>
+
+<script>
+function toggleMenu() {
+    const menu = document.getElementById("dropdownMenu");
+    menu.style.display = menu.style.display === "block" ? "none" : "block";
+}
+</script>
+
+</body>
+</html>
